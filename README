@@ -1,0 +1,11 @@
+OS: Apple Mac OS X Lion
+Mem: 4GB
+GPU: ATI Radeon HD5770
+Kernel: Darwin Kernel Version 11.0.0: Sat Jun 18 12:56:35 PDT 2011
+Screen1: Samsung SyncMaster 2333 1920x1080
+Screen2: Samsung SyncMaster 913N 1280x1024
+
+This section is for general osx stuff.
+Will probably end up with loads of bash scripts & configs like my linux repo.
+
+Web: blog.equk.co.uk
