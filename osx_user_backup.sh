@@ -39,7 +39,7 @@ LOG2=/Users/$USER/scripts/osxbackup/log2.txt
 
 # load banner
 echo -e "# "
-echo -e "# osx_user_backup  Copyright (C) 2011  Bradley Walden"
+echo -e "# osx_user_backup Copyright (C) 2011 equk"
 echo -e "# This program comes with ABSOLUTELY NO WARRANTY."
 echo -e "# This is free software, and you are welcome to redistribute it"
 echo -e "# under certain conditions. See GNU GPLv3."
