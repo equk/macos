@@ -83,5 +83,5 @@ echo -e "$green:: $reset log saved to $LOG2"
 # growl notify
 if [ -e "/usr/local/bin/growlnotify" ]
 then
-	/usr/local/bin/growlnotify -n 'equk-backup' -a 'Activity Monitor' -m "User Backup Process Completed"$'\n'"See log for ore info"
+	/usr/local/bin/growlnotify -n 'equk-backup' -a 'Activity Monitor' -m "User Backup Process Completed"$'\n'"See log for more info"
 fi
