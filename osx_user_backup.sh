@@ -8,6 +8,9 @@
 #
 # GNU General Public License﻿http://www.gnu.org/licenses/
 #
+# For growl support you need growlnotify
+# ﻿   http://growl.info/extras.php
+#
 # blog.equk.co.uk
 # ﻿                                                  
 #                                      -oo-         
@@ -76,3 +79,9 @@ echo -e "$blue:: $reset Backing up Pictures Folder"
 rsync -av --delete --exclude-from=$EXCLUDES $PICTURES "$TARGET" &> $LOG2
 echo -e "$green:: $reset Pictures Sync Complete"
 echo -e "$green:: $reset log saved to $LOG2"
+
+# growl notify
+if [ -e "/usr/local/bin/growlnotify" ]
+then
+	/usr/local/bin/growlnotify -n 'equk-backup' -a 'Activity Monitor' -m "User Backup Process Completed"$'\n'"See log for ore info"
+fi
