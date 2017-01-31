@@ -16,6 +16,7 @@ So far I only have zsh related configs but will probably be adding more over the
 
 * 31-01-2017 - added zshrc (based on zsh from linux)
 * 31-01-2017 - added brew_install.sh
+* 31-01-2017 - added equk.terminal (terminal config)
 
 ## brew_install
 
