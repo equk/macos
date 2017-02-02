@@ -1,0 +1,37 @@
+#!/bin/bash
+##
+#
+# Google Chrome MacOS Script
+# ==========================
+#
+# start google chrome with a ramdisk for cache (~512MB)
+# also use a custom profile path to allow for multiple profile use
+#
+# note: creates temporary ramdisk in /Volumes/RamDisk
+#
+##
+# equk 2017 - equk.co.uk
+##
+
+## variables
+ramdisk_mount="/Volumes/RamDisk"
+profile_folder="$HOME/.chrome_profiles/default"
+cache_folder="$ramdisk_mount/chrome_cache"
+chrome_bin="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+# Create & mount a ramdisk if not already mounted
+if [[ ! -e $ramdisk_mount ]]; then
+    /usr/sbin/diskutil erasevolume HFS+ "RamDisk" `/usr/bin/hdiutil attach -nobrowse -nomount ram://1048576`
+fi
+# Create cache directory if it doesn't exist
+if [[ ! -e $cache_folder ]]; then
+    mkdir -p $cache_folder
+fi
+
+# Create profile directory if it doesn't exist
+if [[ ! -e $profile_folder ]]; then
+    mkdir -p $profile_folder
+fi
+
+# Execute chrome
+exec "$chrome_bin" --user-data-dir=$profile_folder --disk-cache-dir=$cache_folder --no-proxy-server $1
