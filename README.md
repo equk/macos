@@ -18,6 +18,17 @@ So far I only have zsh related configs but will probably be adding more over the
 * 31-01-2017 - added brew_install.sh
 * 31-01-2017 - added equk.terminal (terminal config)
 * 01-02-2017 - added prefs.sh
+* 02-02-2017 - added chrome ramdisk script
+
+## bin/chrome
+
+Google Chrome RamDisk Script
+
+* Mounts a ramdisk on /Volumes/RamDisk
+* Creates a custom profile folder
+* Executes chrome using ramdisk for cache & custom profile folder
+
+This is based on my linux chrome script
 
 ## prefs.sh
 
