@@ -202,3 +202,13 @@ fi
 
 # disable homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
+
+# setup golang paths
+# main golang install path
+export GOROOT="/usr/local/opt/go"
+# go projects path
+export GOPATH="$HOME/golang"
+# binary path for golang projects
+if [ -d "$GOPATH/bin" ] ; then
+    export PATH="$PATH:$GOPATH/bin"
+fi
