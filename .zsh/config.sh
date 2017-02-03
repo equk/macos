@@ -199,3 +199,6 @@ function virtualenv_prompt_info(){
 if [ -d "$HOME/bin" ] ; then
     export PATH="$HOME/bin:$PATH"
 fi
+
+# disable homebrew analytics
+export HOMEBREW_NO_ANALYTICS=1
