@@ -212,3 +212,6 @@ export GOPATH="$HOME/golang"
 if [ -d "$GOPATH/bin" ] ; then
     export PATH="$PATH:$GOPATH/bin"
 fi
+
+# add alias for archey
+alias alsi="archey -o"
