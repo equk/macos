@@ -146,8 +146,12 @@ echo -e "$cl_ok setting screensaver preferences"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+# Save screenshots to the Pictures folder
+screenshots_folder="$HOME/Pictures/Screenshots"
+if [[ ! -e $screenshots_folder ]]; then
+    mkdir -p $screenshots_folder
+fi
+defaults write com.apple.screencapture location -string "$screenshots_folder"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
