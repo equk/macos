@@ -1,6 +1,19 @@
 # macos dotfiles
 
-:green_apple:
+
+                 ###
+               ####
+               ###                    Distro: OS X 10.12
+       #######    #######             Kernel: Darwin
+     ######################           Uptime: xx:xx
+    #####################             Shell: /usr/local/bin/zsh
+    ####################              Terminal: xterm-256color Apple Terminal
+    ####################              CPU: Intel Core i7-2620M CPU @ 2.70GHz
+    #####################             Memory: 4 GB
+     ######################
+      ####################
+        ################
+         ####     #####
 
 ## Sierra
 
