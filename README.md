@@ -3,7 +3,7 @@
 
                  ###
                ####
-               ###                    Distro: OS X 10.12
+               ###                    Distro: OS X 10.12.3
        #######    #######             Kernel: Darwin
      ######################           Uptime: xx:xx
     #####################             Shell: /usr/local/bin/zsh
