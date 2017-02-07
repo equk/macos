@@ -175,8 +175,8 @@ defaults write com.apple.finder QuitMenuItem -bool true
 defaults write com.apple.finder DisableAllAnimations -bool true
 
 # Set users home as the default location for new Finder windows
-# For other paths, use `PfDe` and `file:///full/path/here/`
-defaults write com.apple.finder NewWindowTarget -string "PfDe"
+# For other paths, use `PfLo` and `file:///full/path/here/`
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
 defaults write com.apple.finder NewWindowTargetPath -string "file://$HOME/"
 
 # Show icons for servers and removable media on the desktop
